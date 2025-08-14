@@ -160,6 +160,7 @@ Let's test here_doc
 you can write any number of line, the result in output.txt is this number.
 
 
+
 Let's take `outout.txt` to test n cmd
 ```bash
 ./pipex_bonus output.txt "ls -l" rev cat "wc -l" output2.txt
@@ -170,7 +171,8 @@ Now in `output2.txt` we have :
       11
 ```
 
-Now it's up to you to test !
+
+## Now it's up to you to test !
 
 
 My final grade :
