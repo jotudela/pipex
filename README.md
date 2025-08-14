@@ -91,7 +91,7 @@ You shoud see this :
 Now its really hard
 
 <p align="center">
-  <img src="gifs/cestDUR.gif.webd" alt="its really hard">
+  <img src="gifs/cestDUR.gif" alt="its really hard">
 </p>
 
 
