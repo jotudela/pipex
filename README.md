@@ -168,7 +168,7 @@ Let's take `output2.txt` to test n cmd
 
 Now in `output3.txt` we have :
 ```bash
-      11
+      13
 ```
 
 
