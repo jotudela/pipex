@@ -148,6 +148,7 @@ now you have `pipex_bonus` executable.
 >!
 >```
 >(no need to create a file upstream!)
+>
 >(EOF is a "LIMITER", wich indicate to the program to stop reading from STD_IN)
 
 Step 2:
@@ -157,6 +158,7 @@ Let's test here_doc
 ./pipex_bonus here_doc EOF cat "wc -l" output.txt
 ```
 you can write any number of line, the result in output.txt is this number.
+
 
 Let's take `outout.txt` to test n cmd
 ```bash
