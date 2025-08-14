@@ -31,6 +31,7 @@ Example :
 
 > [!IMPORTANT]
 > In subject, it is requested to manage COMMAND and OPTION in double quotes,
+>
 > so that means this command :
 > ```bash
 > ./pipex file1.txt ls -l wc -l file2.txt
