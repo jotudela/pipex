@@ -38,7 +38,7 @@ Example :
 > ```
 > will fail.
 
-## ⚙️ Usage
+## ⚙️ Usage (mandatory)
 
 Step 1:
 
@@ -82,6 +82,13 @@ You shoud see this :
 ```bash
 ! dlroW olleH
 ```
+
+![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+
+## ⚙️ Usage (bonus)
+
+
 
 My final grade :
 
