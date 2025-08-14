@@ -61,7 +61,7 @@ Step 3:
 
 Let's make a simple test. To execute my program, we need an `input` file :
 ```bash
-echo "Hello World !" > input.txt
+echo Hello World ! > input.txt
 ```
 
 ---
