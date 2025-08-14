@@ -94,6 +94,82 @@ Now its really hard
   <img src="gifs/cestDUR.gif" alt="its really hard">
 </p>
 
+Step 1:
+
+Run this in your environment :
+```bash
+make rebonus
+```
+now you have `pipex_bonus` executable.
+
+>[!NOTE]
+>In the bonus part we need to manage two things :
+> - 1 several pipes
+> - 2 here_doc
+>
+>So this
+>```bash
+>./pipex file1 cmd1 cmd2 cmd3 ... cmdn file2
+>```
+>should be identical at this
+>```bash
+>< file1 cmd1 | cmd2 | cmd3 ... | cmdn > file2
+>```
+>(in theory infinit command)
+>
+>And this
+>```bash
+>./pipex here_doc LIMITER cmd cmd1 file
+>```
+>should be identical at this
+>```bash
+>cmd << LIMITER | cmd1 >> file
+>```
+
+>[!IMPORTANT]
+>`Here_doc` is an another way to create a file. In normal times we do this
+>```bash
+>echo "Hello, World !" > input.txt
+>```
+>but with here_doc, now we can create a file when we run the program !
+>
+>Example :
+>```bash
+>./pipex_bonus here_doc EOF "cat" "rev" output.txt
+>> Hello
+>> World
+>> !
+>> EOF
+>```
+>Now we have a file named `output.txt` which contain
+>```bash
+>olleH
+>dlroW
+>!
+>```
+>(no need to create a file upstream!)
+>(EOF is a "LIMITER", wich indicate to the program to stop reading from STD_IN)
+
+Step 2:
+
+Let's test here_doc
+```bash
+./pipex_bonus here_doc EOF cat "wc -l" output.txt
+```
+you can write any number of line, the result in output.txt is this number.
+
+Let's take `outout.txt` to test n cmd
+```bash
+./pipex_bonus output.txt "ls -l" rev cat "wc -l" output2.txt
+```
+
+Now in `output2.txt` we have :
+```bash
+      11
+```
+
+Now it's up to you to test !
+
 
 My final grade :
 
