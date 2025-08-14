@@ -155,15 +155,15 @@ Step 2:
 
 Let's test here_doc
 ```bash
-./pipex_bonus here_doc EOF cat "wc -l" output.txt
+./pipex_bonus here_doc EOF cat "wc -l" output2.txt
 ```
 you can write any number of line, the result in output.txt is this number.
 
 
 
-Let's take `outout.txt` to test n cmd
+Let's take `output.txt` to test n cmd
 ```bash
-./pipex_bonus output.txt "ls -l" rev cat "wc -l" output2.txt
+./pipex_bonus output.txt "ls -l" rev cat "wc -l" output3.txt
 ```
 
 Now in `output2.txt` we have :
