@@ -44,7 +44,7 @@ Step 1:
 
 Clone the project :
 ```bash
-git clone https://github.com/jotudela/pipex.git && cd get_next_line
+git clone https://github.com/jotudela/pipex.git && cd pipex
 ```
 
 ---
